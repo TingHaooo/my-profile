@@ -10,7 +10,7 @@ header {
 
 .head {
   transition-timing-function: ease-out;
-  transition-duration: 0.1s;
+  transition-duration: 0.4s;
 
   @include respond-to(mobile) {
     background-color: $white;
