@@ -1,9 +1,12 @@
 @import './sub/reset';
+@import './sub/variable';
+@import './sub/mixin';
 @import './sub/header';
 @import './sub/skills';
 @import './sub/projects';
 @import './sub/contact';
 @import './sub/animation';
+@import './sub/download';
 
 html {
   scroll-behavior: smooth;

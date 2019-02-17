@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <title>Ting-Hao Profile</title>
 </head>
@@ -166,6 +167,32 @@
     </div>
   </div>
 
+  <div class="download" id="download">
+    <div class="link-background"></div>
+      <div class="wrapper">
+        <div class="link-container">
+            <a href="https://www.cakeresume.com/ting-hao-chang"
+               class="link-button"
+               id="resume"
+               data-aos="fade-up"
+               data-aos-duration="1000">
+            Resume</a>
+            <a href=""
+               class="link-button"
+               id="autobio"
+               data-aos="fade-up"
+               data-aos-duration="1000">
+            Autobiography</a>
+
+        </div>
+        <h2 class="title"
+            data-aos="fade-left"
+            data-aos-duration="1000">
+          <span>Download</span>
+        </h2>
+      </div>
+  </div>
+
   <div class="contact" id="contact">
     <div class="wrapper">
       <div class="img-container">
@@ -198,7 +225,7 @@
       <div class="contact-container contact-link">
         <h3>Download</h3>
         <ul>
-          <li><a href="mailto:ztingh@gmail.com">Resume</a></li>
+          <li><a href="https://www.cakeresume.com/ting-hao-chang">Resume</a></li>
           <li><a href="">Autobiography</a></li>
         </ul>
       </div>
@@ -208,7 +235,6 @@
     </div>
   </div>
 
-  <!-- aos -->
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

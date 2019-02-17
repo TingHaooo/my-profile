@@ -1,5 +1,5 @@
-$break-big: 650px;
-$break-small: 480px;
+$break-big: 700px;
+$break-small: 580px;
 @mixin respond-to($media) {
   @if $media == desktop {
     @media only screen and (min-width: $break-big + 1) {@content}
