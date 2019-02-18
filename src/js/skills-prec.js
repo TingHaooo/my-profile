@@ -45,10 +45,8 @@ function allSkillsTurnWrapper (precElementsInfo) {
     precElementsInfo.forEach((element) => {
       percentageControl(...element.args)
     });
-    document.removeEventListener('aos:in:skill', allSkillsTurn);
   }
-
-  document.addEventListener('aos:in:skill', allSkillsTurn);
+  allSkillsTurn();
 }
 
 

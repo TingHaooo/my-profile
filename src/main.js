@@ -54,7 +54,7 @@ window.onload = function() {
   precElementsInfo.forEach((element) => {
     element.target.addEventListener('mouseover', () => {percentageControl(...element.args)});
   });
-  // when scroll to skills section, allSkillsTurn
+  // allSkillsTurn
   allSkillsTurnWrapper(precElementsInfo);
 }
 
