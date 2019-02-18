@@ -75,21 +75,19 @@ window.onscroll = () => {
   // ---Projects---
   // project catalog scroll
   var
-    projectFourRectTop = projectList[3].getBoundingClientRect().top,
+    projectThreeRectTop = projectList[2].getBoundingClientRect().top,
     projectContainerRectTop = projectContainer.getBoundingClientRect().top;
 
   function clearStyle(projectCatalogList) {
-    for (let j = 0; j < 4; j++) {
-      projectCatalogList[j].style.borderLeft = null;
+    for (let j = 0; j < 3; j++) {
       projectCatalogList[j].style.color = null;
     }
   }
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 3; i++) {
     // if project catalog is around project title 100px, add borderleft
     if (projectList[i].getBoundingClientRect().top > -100 && projectList[i].getBoundingClientRect().top < 100) {
       clearStyle(projectCatalogList);
-      projectCatalogList[i].style.borderLeft = "2px solid white";
       projectCatalogList[i].style.color = "white";
     }
   }
@@ -98,24 +96,22 @@ window.onscroll = () => {
     // make sure is projectone having style
     fixedContainer.style.position = 'absolute'
     clearStyle(projectCatalogList);
-    projectCatalogList[0].style.borderLeft = "2px solid white";
     projectCatalogList[0].style.color = "white";
     // if window above projects
   }
 
-  if (projectContainerRectTop < 0 && projectFourRectTop>= -20) {
+  if (projectContainerRectTop < 0 && projectThreeRectTop>= -20) {
     // contact projects -> increase margin
     fixedContainer.style.marginTop = '0px';
     fixedContainer.style.position = 'fixed';
   }
 
-  if (projectFourRectTop < -60){
+  if (projectThreeRectTop < -60){
     // make sure is projectfour having style
     clearStyle(projectCatalogList)
-    projectCatalogList[3].style.borderLeft = "2px solid white";
-    projectCatalogList[3].style.color = "white";
+    projectCatalogList[2].style.color = "white";
     // margin to 100px above projectFour position
-    var marginRange = projectFourRectTop - projectContainerRectTop + 60 ;
+    var marginRange = projectThreeRectTop - projectContainerRectTop + 60 ;
     fixedContainer.style.position = 'absolute';
     fixedContainer.style.marginTop = `${marginRange}px`;
   }
